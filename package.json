@@ -1,0 +1,24 @@
+{
+  "name": "word-game",
+  "version": "1.0.0",
+  "description": "Simple word game",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "lite-server": "^2.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taritamas89/word-game.git"
+  },
+  "author": "Tamas Tari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taritamas89/word-game/issues"
+  },
+  "homepage": "https://github.com/taritamas89/word-game#readme"
+}
