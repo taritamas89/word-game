@@ -1,0 +1,17 @@
+{
+    "name": "word-game",
+    "version": "1.0.0",
+    "authors": [
+        "Tamas Tari <taritamas89@gmail.com>"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "src/vendors"
+    ],
+    "dependencies": {
+        "angular": "^1.6.2",
+        "angular-bootstrap": "^2.5.0"
+    }
+}
