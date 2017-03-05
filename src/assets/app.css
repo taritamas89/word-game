@@ -1,0 +1,9 @@
+body {
+  width: 101%; }
+
+.navbar .navbar-brand {
+  padding: 0 15px 0 0; }
+  .navbar .navbar-brand img {
+    display: inline-block;
+    height: 100%;
+    padding-right: 15px; }

@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default" ng-controller="MenuController as menu">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" ng-click="menu.isNavCollapsed = !menu.isNavCollapsed">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="assets/logo.png" alt="word-logo"><span>Word Game</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" uib-collapse="menu.isNavCollapsed">
+            <ul class="nav navbar-nav">
+                <li ng-class="{active: true}"><a href="#">Home</a></li>
+                <li><a href="#">Rules</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

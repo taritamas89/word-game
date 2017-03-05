@@ -6,8 +6,7 @@
 
     }
 
-    HomeController.$inject = [
-    ];
+    HomeController.$inject = [];
 
     angular.module('app.home')
         .controller('HomeController', HomeController);

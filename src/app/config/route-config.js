@@ -13,7 +13,14 @@
         $stateProvider
             .state('home', {
                 url: '/home',
-                templateUrl: 'app/home/home.html'
+                views: {
+                    'menu@': {
+                        templateUrl: "app/menu/menu.html"
+                    },
+                    'main@': {
+                        templateUrl: "app/home/home.html"
+                    }
+                }
             });
     }
 

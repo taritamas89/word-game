@@ -5,6 +5,8 @@
         .module('app', [
             'ui.router',
             'ui.bootstrap',
-            'app.home'
+            'ngAnimate',
+            'app.home',
+            'app.menu'
         ]);
 })();

@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="">
+<html lang="en">
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
         <meta charset="utf-8">
         <title>Word Game</title>
         <meta name="description" content="Simple word game">
-        <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
 
@@ -15,19 +15,28 @@
         <!-- Third party CSS -->
         <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
 
+        <!-- CSS files -->
+        <link rel="stylesheet" href="assets/app.css">
+
         <!-- Third party libs -->
         <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
         <script type="text/javascript" src="vendors/angular-ui-router/release/angular-ui-router.js"></script>
+        <script type="text/javascript" src="vendors/angular-animate/angular-animate.min.js"></script>
+        <script type="text/javascript" src="vendors/angular-touch/angular-touch.min.js"></script>
         <script type="text/javascript" src="vendors/angular-bootstrap/ui-bootstrap.min.js"></script>
 
         <!-- JS libs -->
-        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="app/app.module.js"></script>
         <script type="text/javascript" src="app/config/route-config.js"></script>
+        <script type="text/javascript" src="app/config/constants.js"></script>
         <script type="text/javascript" src="app/home/home.module.js"></script>
         <script type="text/javascript" src="app/home/home.controller.js"></script>
+        <script type="text/javascript" src="app/menu/menu.module.js"></script>
+        <script type="text/javascript" src="app/menu/menu.controller.js"></script>
     </head>
 
     <body ng-app="app">
-        <ui-view></ui-view>
+        <div ui-view="menu"></div>
+        <div ui-view="main"></div>
     </body>
 </html>
