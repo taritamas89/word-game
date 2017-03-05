@@ -8,7 +8,7 @@
 
     MenuController.$inject = [];
 
-    angular.module('app.home')
+    angular.module('app.menu')
         .controller('MenuController', MenuController);
 
 })();

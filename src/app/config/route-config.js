@@ -21,6 +21,14 @@
                         templateUrl: "app/home/home.html"
                     }
                 }
+            })
+            .state('game', {
+                url: '/game',
+                views: {
+                    'main@': {
+                        templateUrl: "app/game/game.html"
+                    }
+                }
             });
     }
 

@@ -6,7 +6,10 @@
             'ui.router',
             'ui.bootstrap',
             'ngAnimate',
+            'ngCookies',
+            'app.core',
             'app.home',
-            'app.menu'
+            'app.menu',
+            'app.user'
         ]);
 })();

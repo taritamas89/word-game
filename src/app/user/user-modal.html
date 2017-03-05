@@ -1,0 +1,23 @@
+<div class="modal-header">
+    <h3 class="modal-title">Enter your username</h3>
+</div>
+<div class="modal-body">
+    <form name="userForm">
+        <div class="input-group">
+            <!-- <span class="input-group-addon" id="basic-addon1">@</span> -->
+            <label for="">Username:
+                <input type="text" class="form-control" name="username" ng-model="userModal.username" placeholder="Username" ng-maxlength="20" maxlength="20" required>
+            </label>
+            <label for="">Name:
+                <input type="text" class="form-control" name="name" ng-model="userModal.name" placeholder="Name" ng-maxlength="40" maxlength="40">
+            </label>
+            <div role="alert">
+                <span class="error" ng-show="userForm.username.$error.required">Username is required!</span>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="userModal.start()" ng-disabled="userForm.username.$error.required">Start</button>
+    <button class="btn btn-warning" type="button" ng-click="userModal.cancel()">Cancel</button>
+</div>

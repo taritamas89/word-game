@@ -1,8 +1,12 @@
 <div class="container" ng-controller="HomeController as home">
-    <h2>Word game</h2>
-    <p>Welcome to Word Game</p>
-    <p>Description</p>
-    <button type="button" class="btn btn-primary">
-        Start Game
-    </button>
+    <loading-indicator show="home.showLoading"></loading-indicator>
+
+    <h2>Welcome to Word Game</h2>
+    <div ng-if="home.user" class="">
+        <p>Hello {{home.user.name}}</p>
+        <p>Registered: {{home.user.date}}</p>
+        <p>Your high score: {{home.user.score}}</p>
+    </div>
+    <p>This game is crated for...</p>
+    <button type="button" class="btn btn-primary" ng-disabled="home.showLoading" ng-click="home.startButtonClick()"> Start Game</button>
 </div>

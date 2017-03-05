@@ -1,5 +1,14 @@
-body {
-  width: 101%; }
+#loading .ring-spinner {
+  position: fixed;
+  top: calc(50vh - 30px);
+  left: calc(50vw - 31px);
+  z-index: 11;
+  fill: white;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(80, 80, 80, 0.25);
+  padding: 2px;
+  border-radius: 50%; }
 
 .navbar .navbar-brand {
   padding: 0 15px 0 0; }
@@ -7,3 +16,9 @@ body {
     display: inline-block;
     height: 100%;
     padding-right: 15px; }
+
+.modal-body label {
+  display: block; }
+
+.modal-body .error {
+  color: red; }
